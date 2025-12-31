@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FBCookieTweak</title>
+  <style>
+    :root{--bg:#f6f7fb;--card:#fff;--text:#121314;--muted:#5a5f6a;--border:rgba(0,0,0,.08);--accent:#ff3b30;--shadow:0 8px 30px rgba(0,0,0,.08);}
+    @media (prefers-color-scheme: dark){
+      :root{--bg:#0b0c0f;--card:#141622;--text:#f3f5ff;--muted:#a9afc2;--border:rgba(255,255,255,.10);--accent:#ff453a;--shadow:0 10px 40px rgba(0,0,0,.45);}
+    }
+    *{box-sizing:border-box}
+    body{margin:0;padding:16px;font-family:-apple-system,BlinkMacSystemFont,Arial;background:var(--bg);color:var(--text);}
+    .wrap{max-width:780px;margin:0 auto;}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:16px;box-shadow:var(--shadow);margin:0 0 14px;}
+    h1{font-size:22px;margin:0}
+    .meta{color:var(--muted);font-size:13px;margin-top:4px}
+    .badges{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px}
+    .badge{font-size:12px;color:var(--muted);border:1px solid var(--border);padding:6px 10px;border-radius:999px;background:rgba(0,0,0,.02);}
+    @media (prefers-color-scheme: dark){.badge{background:rgba(255,255,255,.03)}}
+    .accent{color:var(--accent);font-weight:800}
+    .shots{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:4px;-webkit-overflow-scrolling:touch;}
+    .shots::-webkit-scrollbar{display:none}
+    .shots img{width:72%;max-width:360px;border-radius:16px;border:1px solid var(--border);scroll-snap-align:start;box-shadow:0 10px 30px rgba(0,0,0,.12);object-fit:cover;flex:0 0 auto;}
+    .divider{height:1px;background:var(--border);margin:12px 0}
+    .row{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:13px;}
+    a{color:inherit}
+    .footer{font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="card">
+    <h1>FBCookieTweak</h1>
+    <div class="meta">iOS 16.5 · Rootful · Facebook App + Safari</div>
+    <div class="badges">
+      <div class="badge">BOTTOM overlay</div>
+      <div class="badge">5s auto-hide</div>
+      <div class="badge"><span class="accent">Ad line</span> đỏ đậm</div>
+      <div class="badge">Cookie line mờ</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="font-weight:700;margin-bottom:10px;">📱 Screenshots</div>
+    <div class="shots">
+      <img src="../assets/screenshots/1.png" alt="1">
+      <img src="../assets/screenshots/2.png" alt="2">
+      <img src="../assets/screenshots/3.png" alt="3">
+    </div>
+    <div style="margin-top:10px;color:var(--muted);">Vuốt ngang để xem thêm ảnh.</div>
+  </div>
+
+  <div class="card">
+    <div style="font-weight:700;margin-bottom:10px;">📌 Mô tả</div>
+    <ul style="margin:0;padding-left:18px;">
+      <li>Hiện chữ nổi ở <b>BOTTOM</b> khi mở Facebook app.</li>
+      <li>Safari: chỉ hiện khi vào <b>facebook.com</b>.</li>
+      <li>Dòng “Dịch Vụ …” <span class="accent">đỏ & đậm</span>; dòng cookie hiển thị mờ.</li>
+      <li>Tự ẩn sau 5 giây.</li>
+    </ul>
+    <div class="divider"></div>
+    <div class="row">
+      <div>Author: <b>ChenGuangLi</b></div>
+      <div>Repo: <b>tql.github.io</b></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="font-weight:700;margin-bottom:10px;">🔔 Changelog</div>
+    <a href="./fbcookietweak-changelog.html">👉 Xem changelog</a>
+  </div>
+
+  <div class="footer">© ChenGuangLi · Depiction auto Dark/Light</div>
+
+</div>
+</body>
+</html>
