@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TQL Repo</title>
+  <meta name="description" content="TQL Repo - iOS tweaks repository" />
+  <style>
+    :root{
+      --bg:#0b0f17; --card:#121a27; --text:#e8eefc; --muted:#a9b4cc;
+      --line:#23314b; --brand:#40ff7a; --brand2:#2dd4ff;
+      --btn:#1a2436; --shadow:0 12px 28px rgba(0,0,0,.35);
+    }
+    @media (prefers-color-scheme: light){
+      :root{--bg:#f6f8ff; --card:#ffffff; --text:#0b1220; --muted:#51607a; --line:#e7ecf7; --btn:#f2f5ff;}
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:radial-gradient(1200px 600px at 15% 0%, rgba(64,255,122,.14), transparent 60%),
+                 radial-gradient(900px 500px at 90% 15%, rgba(45,212,255,.12), transparent 55%),
+                 var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1040px;margin:0 auto;padding:28px 16px 56px}
+    .top{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:12px;background:#0003;box-shadow:var(--shadow);overflow:hidden;border:1px solid var(--line)}
+    .logo img{width:100%;height:100%;object-fit:cover}
+    h1{margin:0;font-size:22px;letter-spacing:.2px}
+    .sub{margin:2px 0 0;color:var(--muted);font-size:13px}
+    .pillbar{display:flex;gap:10px;flex-wrap:wrap}
+    .pill{padding:9px 12px;border:1px solid var(--line);background:rgba(255,255,255,.02);border-radius:999px;font-size:13px}
+    .pill b{color:var(--brand)}
+    .hero{margin-top:18px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,.03), transparent);
+      border-radius:18px;padding:18px;box-shadow:var(--shadow);
+      display:flex;gap:16px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+    .hero .left{min-width:260px}
+    .hero h2{margin:0 0 6px;font-size:18px}
+    .hero p{margin:0;color:var(--muted);line-height:1.5}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .btn{display:inline-flex;gap:10px;align-items:center;padding:10px 12px;border-radius:12px;background:var(--btn);border:1px solid var(--line);font-size:13px}
+    .btn:hover{transform:translateY(-1px)}
+    .grid{margin-top:18px;display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+    .card{grid-column:span 12;border:1px solid var(--line);background:var(--card);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}
+    @media(min-width:720px){.card{grid-column:span 6}}
+    .cardin{padding:16px}
+    .row{display:flex;gap:12px;align-items:center}
+    .icon{width:54px;height:54px;border-radius:16px;border:1px solid var(--line);overflow:hidden;background:#0002}
+    .icon img{width:100%;height:100%;object-fit:cover}
+    .name{font-weight:700}
+    .meta{color:var(--muted);font-size:12.5px;margin-top:2px}
+    .desc{color:var(--muted);font-size:13px;line-height:1.45;margin:10px 0 0}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .tag{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.02)}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .link{display:inline-flex;align-items:center;gap:8px;padding:9px 12px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.02);font-size:13px}
+    .link strong{color:var(--brand)}
+    footer{margin-top:24px;color:var(--muted);font-size:12px;text-align:center}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:rgba(255,255,255,.06);padding:2px 6px;border-radius:8px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">
+        <div class="logo"><img src="CydiaIcon.png" alt="Repo Icon"></div>
+        <div>
+          <h1>TQL Repo</h1>
+          <div class="sub">iOS Tweaks • Rootless (Dopamine) / arm64</div>
+        </div>
+      </div>
+      <div class="pillbar">
+        <div class="pill">Repo URL: <code>https://quangluc200601-bot.github.io/tweaksileo</code></div>
+        <div class="pill">Liên hệ: <b>@ChenGuangLi</b></div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="left">
+        <h2>Chào mừng bạn đến với TQL Repo</h2>
+        <p>Danh sách tweak được cập nhật thường xuyên. Bấm vào từng tweak để xem mô tả, ảnh, changelog và cài đặt.</p>
+      </div>
+      <div class="cta">
+        <a class="btn" href="Packages">Xem Packages</a>
+        <a class="btn" href="Release">Xem Release</a>
+        <a class="btn" href="depiction/">Thư mục Depiction</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <!-- CARD: FBCookieTweak -->
+      <div class="card">
+        <div class="cardin">
+          <div class="row">
+            <div class="icon"><img src="assets/fbcookietweak-icon.png" alt="FBCookieTweak Icon"></div>
+            <div>
+              <div class="name">FBCookieTweak</div>
+              <div class="meta">Package: <code>com.luc.fbcookietweak</code> • iOS 16+ • arm64 • rootless</div>
+            </div>
+          </div>
+
+          <div class="desc">
+            Overlay thông báo khi mở Facebook. Hiển thị chữ theo thiết kế (dòng mờ + dòng đậm), tự ẩn sau vài giây.
+          </div>
+
+          <div class="tags">
+            <div class="tag">Facebook</div>
+            <div class="tag">Overlay</div>
+            <div class="tag">ElleKit</div>
+            <div class="tag">Rootless</div>
+          </div>
+
+          <div class="actions">
+            <a class="link" href="depiction/fbcookietweak.html"><strong>Depiction</strong> (Giới thiệu)</a>
+            <a class="link" href="depiction/fbcookietweak-changelog.html">Changelog</a>
+            <a class="link" href="assets/screenshots/">Screenshots</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- COPY thêm card mới cho tweak khác ở đây -->
+    </div>
+
+    <footer>
+      © <span id="y"></span> TQL Repo • GitHub Pages • Built for Sileo
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
