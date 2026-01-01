@@ -1,14 +1,14 @@
 Package: com.luc.fbcookietweak
-Version: 1.0.1-4-2+debug
+Version: 1.0.1-6-2+debug
 Architecture: iphoneos-arm64
 Maintainer: ChenGuangLi (TQL)
 Installed-Size: 92
 Depends: ellekit
-Filename: debs/com.luc.fbcookietweak_1.0.1-4-2+debug_iphoneos-arm64.deb
-Size: 7148
-MD5sum: 7152728a29756a775806f40fc83e2807
-SHA1: 7d9eae89a8e589014df89a8e6c4fbafb68ae3d07
-SHA256: 0e76b05da83abe114ab907c7faeb3f3665d5b5c00ddadd2828037364e429a6c2
+Filename: debs/com.luc.fbcookietweak_1.0.1-6-2+debug_iphoneos-arm64.deb
+Size: 7318
+MD5sum: f3528e7ed9a5a5bd75679126cb349d59
+SHA1: 9a1a6c4dec25e2acbd544a269c8758aac47909d8
+SHA256: 9063fc64d63e502b21c1fc83d5f34bd0d8d3bc36e8e3742bb6d2f63af55eba9f
 Section: Tweaks
 Description: Overlay text when opening Facebook
 Author: ChenGuangLi (TQL)
